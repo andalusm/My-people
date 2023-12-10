@@ -1,0 +1,18 @@
+.users-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.user-info{
+    background-color: lightgray;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    gap: 10px;
+    padding: 20px;
+    
+}
+
+.user-info:hover{
+    background-color: gray;
+}

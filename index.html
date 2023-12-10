@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>My people</title>
+</head>
+<body>
+    <h1>My people</h1>
+<div class="users-container">
+
+</div>
+
+
+
+    <script id="users-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <div class="user-info">
+        <div >{{name}}</div>
+        <br>
+        <a href="mailto:{{email}}" >{{email}}</a>
+    </div>
+        {{/each}}
+    
+    </script>
+    
+    <script src="APIManager.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+
+    
+</body>
+</html>
